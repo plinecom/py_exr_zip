@@ -106,6 +106,4 @@ About [Python's OpenEXR module (English)](https://excamera.com/sphinx/articles-o
 
 [Wikipedia's OpenEXR page](https://en.wikipedia.org/wiki/OpenEXR)
 
-[Wikipedia's OpenEXR page (Japanese)](https://ja.wikipedia.org/wiki/OpenEXR)
-
 http://yamagishi-2bit.blogspot.com/2020/05/vfxexr.html
