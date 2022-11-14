@@ -97,16 +97,16 @@ PIZ compresses image data in the frequency domain using a wavelet transform, whi
 
 ## Compression that can be lossless or lossy.
 ### PXR24
-PXR24 compresses data with quantization reduced to 24 bits. 16-bit half-precision floating-point data and 16-bit integer data below 24 bits are lossless lossy lossy lossy compression, but 32-bit single-precision floating-point data, etc. are lossy lossy lossy compression. This point should be handled with caution, so if you are not sure, do not select this option.
+PXR24 compresses data with quantization reduced to 24 bits. 16-bit half-precision floating-point data and 16-bit integer data below 24 bits are lossless compression, but 32-bit single-precision floating-point data, etc. are lossy compression. This point should be handled with caution, so if you are not sure, do not select this option.
 
-## Lossy lossy compression option
+## Lossy compression option
 Other lossy compression options are as follows.
 * B44
 * B44A
 * DWAA
 * DWAB
 
-However, I think that most of us use OpenEXR for high quality, and I don't think we will use lossy lossy lossy compression, which may cause an accident due to different decompression results at the delivery destination. If you are a large studio that produces your own masters, it may be an option in terms of storage efficiency.
+However, I think that most of us use OpenEXR for high quality, and I don't think we will use lossy compression, which may cause an accident due to different decompression results at the delivery destination. If you are a large studio that produces your own masters, it may be an option in terms of storage efficiency.
 
 # advertisement
 digitalbigmo Inc. sells beautiful skin plug-ins and provides video VFX production services. If you are interested, please come visit our web page. Let's work together.
