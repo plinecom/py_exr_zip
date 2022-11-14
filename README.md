@@ -46,6 +46,19 @@ pip install OpenEXR
 Download from PyPI using pip, and the Imath module will be installed with it.
 However, you will need to install Python's own header file for the build process. If you cannot prepare it, it is easier to build it from Python.
 
+I also prepared a Dockerfile. I hope you will forgive me if some of the files are downloaded from rpmfusion, which is a bit weird. If you have a better way, please let me know.
+```Dockerfile:Dockerfile
+FROM rockylinux:8
+RUN dnf install -y which python3 python3-devel gcc gcc-c++ epel-release zlib-devel
+RUN dnf config-manager --set-enabled powertools
+RUN dnf localinstall -y --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm
+RUN dnf install -y OpenEXR-devel
+RUN pip3 install OpenEXR
+RUN dnf install -y --nogpgcheck RUN dnf install -y
+```
+```terminal:terminal
+docker pull plinecom/py_exr_zip
+```
 ## Explanation of code
 ### Load EXR file
 ```python:
