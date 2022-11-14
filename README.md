@@ -1,5 +1,3 @@
-# py_exr_zip
-
 # Self Introduction
 I am Masataka @plinecom, a pipeline engineer at digitalbigmo, Inc.
 
